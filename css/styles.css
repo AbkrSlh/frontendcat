@@ -5,7 +5,7 @@ body {
 
 
 h1 {
-  font-family: 'Montserrat-Black';
+  font-family: 'Montserrat-Black', sans-serif;
   font-weight: 800;
   font-size: 4rem;
   line-height: 1.5;
@@ -21,8 +21,8 @@ h1 {
 
 /* making the container responsive */
 
-.container-fluid {
-  padding: 3% 15%;
+.title-container {
+  padding: 3% 15% 7%;
 }
 
 
@@ -31,8 +31,13 @@ h1 {
 
 .iphone {
   width: 60%;
-  transform: rotate(25deg)
+  transform: rotate(25deg);
+  position: absolute;
+  right: 30%;
 }
+
+
+
 
 
 /* navbar  */
@@ -60,5 +65,146 @@ h1 {
 
 /* download buttons */
 .download-btn {
+  font-family: 'Verdana', sans-serif;
   margin: 5% 3% 5% 0;
+}
+
+/* features */
+
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+  /* z-index: 1; */
+}
+
+/* headers */
+
+.feature-box {
+  padding: 4.5%;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  /* text-align: center; */
+}
+
+/* icon */
+
+.icon {
+  /* text-align: center; */
+  /* margin: 3rem auto; */
+  color: #ef7181;
+  font-size: 5rem;
+  /* for the sizes we could have used the fontawesome size class like '4x 3x 2x ' and set it to maybe '4x' */
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+/* text */
+
+p {
+  color: #8f8f8f;
+}
+
+
+
+
+
+
+
+/* testimonials */
+
+#testimonials {
+  /* height: 90vh; */
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+  height: 100%;
+}
+
+.testimonial-text {
+  font-family: 'Montserrat-bold', sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+/* press */
+
+#press {
+  background-color: #ef8172;
+  padding-bottom: 3%;
+  text-align: center;
+}
+
+.press-image {
+  width: 15%;
+  margin: 20px 50px;
+}
+
+
+/* pricing section */
+
+#pricing {
+  padding: 100px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+  .iphone {
+    position: static;
+    transform: rotate(0);
+  }
+}
+
+/* call to action section  */
+
+#cta {
+  background-color: #ff4c68;
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.cta-text {
+  font-family: 'Montserrat-black', sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #fff;
+}
+
+
+/* footer section */
+
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+.social-icon {
+  margin: 1rem 0.5rem;
 }
